@@ -4,9 +4,14 @@ from bs4 import BeautifulSoup as bs
 
 def extract(src: str) -> dict[str, str]:
     """Function reads deck txt file and outputs questions and correct answers"""
-    # read text file
+    if not src:  # check for empty inputs
+        raise ValueError()
+
+    # read text file, confirm not empty
     with open(src) as file:
         cards = file.read()
+    if not cards:
+        raise ValueError()
 
     # create html soup object from raw text to easily search contents
     card_soup = bs(cards, 'html.parser')
