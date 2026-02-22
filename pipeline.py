@@ -25,5 +25,5 @@ def load(qs_and_as: dict[str, set[str]], dest: str) -> None:
 
 
 if __name__ == '__main__':
-    src = 'data/Master Quiz 26 Sept.txt'  # assume source is downloaded as txt file
+    src = 'data/sample.txt'  # assume source is downloaded as txt file
     extract(src)
