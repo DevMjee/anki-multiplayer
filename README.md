@@ -4,7 +4,7 @@
 - Extract questions and answers: start with only MCQs
 - Save correct answers and questions as a Mark Scheme with code abc
 - Save each question and their set of potential answers as a Quiz with code abc
-- Play the quiz in the console independently to determine it goes through whole deck without repeating
+- Play the quiz in the console independently to confirm it goes through whole deck without repeating
 - Add function to check if selected answers are correct (remove self marking unlike Anki)
 - Track score and display at the end of the game
 - Refactor to play game outside the console on HTML webpage
